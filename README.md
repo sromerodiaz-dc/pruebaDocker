@@ -20,3 +20,10 @@ docker start dam_alp1
 docker exect -it dam_alp1 sh
 ```
 Crea un contenedor llamado "dam_alp1", se inicia y se accede a el.
+
+## 4. Comprobar IP y ping a google.com
+```bash
+hostname -I
+ping google.com
+```
+Verifica la IP del contenedor y su conectividad a Internet
