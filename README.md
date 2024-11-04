@@ -12,3 +12,11 @@ docker create alpine
 docker ps -a
 ```
 Crea un contenedor anonimo y comprueba la existencia del mismo
+
+## 3. Crear contenedor llamado 'dam_alp1'
+```bash
+docker create --name dam_alp1 alpine
+docker start dam_alp1
+docker exect -it dam_alp1 sh
+```
+Crea un contenedor llamado "dam_alp1", se inicia y se accede a el.
