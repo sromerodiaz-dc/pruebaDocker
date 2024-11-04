@@ -37,8 +37,13 @@ ping dam_alp1
 ```
 Crea el contenedor, inicia ambos contenedores, ejecuta dam_alp2 y hace ping a dam_alp1
 
-## Salir del contenedor y ver espacio en disco
+## 6. Salir del contenedor y ver espacio en disco
 ```bash
 exit
 docker system df
+```
+
+## 7. Uso de RAM por los contenedores
+```bash
+docker stats
 ```
