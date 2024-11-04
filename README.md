@@ -27,3 +27,12 @@ hostname -I
 ping google.com
 ```
 Verifica la IP del contenedor y su conectividad a Internet
+
+## 5. Crear contenedor "dam_alp2" y comprobar conexion con "dam_alp1"
+```bash
+docker create --name dam_alp2 alpine
+docker start dam_alp1 dam_alp2
+docker exec -it dam_alp2 sh
+ping dam_alp1
+```
+Crea el contenedor, inicia ambos contenedores, ejecuta dam_alp2 y hace ping a dam_alp1
