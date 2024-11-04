@@ -36,3 +36,9 @@ docker exec -it dam_alp2 sh
 ping dam_alp1
 ```
 Crea el contenedor, inicia ambos contenedores, ejecuta dam_alp2 y hace ping a dam_alp1
+
+## Salir del contenedor y ver espacio en disco
+```bash
+exit
+docker system df
+```
